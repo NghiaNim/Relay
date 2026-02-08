@@ -1,0 +1,13 @@
+---
+description: Core project rules for Relay
+globs: 
+alwaysApply: true
+---
+
+# Relay Project Rules
+
+1. **No verbosity.** Less text, more code. Be to the point.
+2. **README is the single source of truth.** Always update `README.md` with current project state. Don't create extra docs.
+3. **Clean file structure.** No stale files. Old versions go to `legacy/` if still useful, otherwise delete.
+4. **No redundant files.** One script per purpose. No duplicate analysis notebooks or throwaway files.
+5. **100x mindset.** Efficient, minimal, working code. Ship fast.
