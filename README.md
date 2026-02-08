@@ -10,7 +10,8 @@ EEG + TD-NIRS → robot control prediction. Real-time BCI pipeline for hackathon
 - [x] Output contract defined for viz integration
 - [x] Robot animation dashboard (EEG + confidence + decision gate)
 - [x] Reference pipeline analyzed (`bri`) — discrepancies documented
-- [x] Output contract updated: EEG class → robot action + cmd_vel mapping
+- [x] Output contract updated: 5 EEG classes → 5 robot actions (FORWARD/BACKWARD/LEFT/RIGHT/STOP)
+- [x] Grid-based robot navigation animation with trail
 - [ ] Improved model (bandpass + CSP or neural net)
 - [ ] Temporal smoothing / sliding window predictions
 - [ ] `bri` MuJoCo sim integration
@@ -52,8 +53,8 @@ EEG motor imagery → [ML Model] → Intent class → [Mapping] → Robot action
 | Left fist | `left` | `LEFT` (turn left) |
 | Right fist | `right` | `RIGHT` (turn right) |
 | Both fists | `both` | `FORWARD` (walk) |
-| Tongue tap | `tongue` | `STOP` |
-| Relax | `rest` | `STOP` |
+| Tongue tap | `tongue` | `BACKWARD` (reverse) |
+| Relax | `rest` | `STOP` (idle) |
 
 See [`gameplan/output_contract.md`](gameplan/output_contract.md) for full spec.
 
@@ -74,7 +75,9 @@ Relay/
 ├── .cursor/rules/         # Project rules
 ├── gameplan/
 │   ├── gameplan.md        # Team plan & roles
-│   └── output_contract.md # Model output spec for viz integration
+│   ├── output_contract.md # Model output spec for viz integration
+│   ├── data_description.md # Dataset shape & format reference
+│   └── training_spec.md   # Seed, split, metrics — all models must follow
 ├── scripts/
 │   ├── analyze_packet.py  # Single-packet EDA
 │   ├── train_baseline.py  # Train logistic regression

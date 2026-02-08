@@ -18,20 +18,21 @@ FS = config["fs"]
 STIM_ONSET = config["stim_onset"]
 CONFIDENCE_THRESHOLD = 0.5
 
-# EEG class → robot action mapping (matches bri.Action enum)
+# EEG class → robot action mapping
 ACTION_MAP = {
     "left": "LEFT",
     "right": "RIGHT",
     "both": "FORWARD",
-    "tongue": "STOP",
+    "tongue": "BACKWARD",
     "rest": "STOP",
 }
 
 CMD_VEL_MAP = {
-    "FORWARD": {"vx": 0.6, "vy": 0.0, "yaw_rate": 0.0},
-    "LEFT":    {"vx": 0.0, "vy": 0.0, "yaw_rate": 1.5},
-    "RIGHT":   {"vx": 0.0, "vy": 0.0, "yaw_rate": -1.5},
-    "STOP":    {"vx": 0.0, "vy": 0.0, "yaw_rate": 0.0},
+    "FORWARD":  {"vx":  0.6, "vy": 0.0, "yaw_rate":  0.0},
+    "BACKWARD": {"vx": -0.4, "vy": 0.0, "yaw_rate":  0.0},
+    "LEFT":     {"vx":  0.0, "vy": 0.0, "yaw_rate":  1.5},
+    "RIGHT":    {"vx":  0.0, "vy": 0.0, "yaw_rate": -1.5},
+    "STOP":     {"vx":  0.0, "vy": 0.0, "yaw_rate":  0.0},
 }
 
 

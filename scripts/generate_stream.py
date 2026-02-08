@@ -14,13 +14,14 @@ BANDS = cfg["bands"]
 FS = cfg["fs"]
 STIM_ONSET = cfg["stim_onset"]
 
-# EEG class → robot action mapping (matches bri.Action)
-ACTION_MAP = {"left": "LEFT", "right": "RIGHT", "both": "FORWARD", "tongue": "STOP", "rest": "STOP"}
+# EEG class → robot action mapping
+ACTION_MAP = {"left": "LEFT", "right": "RIGHT", "both": "FORWARD", "tongue": "BACKWARD", "rest": "STOP"}
 CMD_VEL_MAP = {
-    "FORWARD": {"vx": 0.6, "vy": 0.0, "yaw_rate": 0.0},
-    "LEFT":    {"vx": 0.0, "vy": 0.0, "yaw_rate": 1.5},
-    "RIGHT":   {"vx": 0.0, "vy": 0.0, "yaw_rate": -1.5},
-    "STOP":    {"vx": 0.0, "vy": 0.0, "yaw_rate": 0.0},
+    "FORWARD":  {"vx":  0.6, "vy": 0.0, "yaw_rate":  0.0},
+    "BACKWARD": {"vx": -0.4, "vy": 0.0, "yaw_rate":  0.0},
+    "LEFT":     {"vx":  0.0, "vy": 0.0, "yaw_rate":  1.5},
+    "RIGHT":    {"vx":  0.0, "vy": 0.0, "yaw_rate": -1.5},
+    "STOP":     {"vx":  0.0, "vy": 0.0, "yaw_rate":  0.0},
 }
 
 
@@ -64,7 +65,8 @@ for f in session_files:
     classes = le.classes_.tolist()
     predicted = classes[pred_idx]
     above = float(proba[pred_idx]) > 0.5
-    robot_action = ACTION_MAP[predicted] if above else "STOP"
+    # Use ungated action for viz demo so robot actually moves
+    robot_action = ACTION_MAP[predicted]
 
     # Downsample EEG heavily: every 50th sample → ~150 points
     eeg_ds = eeg[::50, :]

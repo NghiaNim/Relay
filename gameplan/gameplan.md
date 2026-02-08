@@ -31,7 +31,7 @@ Build the intent decoder. Takes a windowed EEG signal, outputs a prediction.
 }
 ```
 
-**EEG → Robot mapping:** `left`→LEFT, `right`→RIGHT, `both`→FORWARD, `tongue`/`rest`→STOP.
+**EEG → Robot mapping:** `left`→LEFT, `right`→RIGHT, `both`→FORWARD, `tongue`→BACKWARD, `rest`→STOP.
 Gated by confidence: if `is_above_threshold == false`, force STOP.
 
 **Deliverables:**

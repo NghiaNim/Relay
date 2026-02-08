@@ -31,7 +31,7 @@ result = predict(eeg)
 | `confidence` | `float` | Top-class probability (0–1) |
 | `all_probabilities` | `dict[str, float]` | All 5 class probabilities, sum ≈ 1.0 |
 | `is_above_threshold` | `bool` | `confidence > threshold` (default 0.5) |
-| `robot_action` | `str` | Robot command: `FORWARD`, `LEFT`, `RIGHT`, `STOP` |
+| `robot_action` | `str` | Robot command: `FORWARD`, `BACKWARD`, `LEFT`, `RIGHT`, `STOP` |
 | `cmd_vel` | `dict` | Velocity: `{vx, vy, yaw_rate}` — what the robot consumes |
 | `timestamp_ms` | `int` | Unix epoch ms |
 | `inference_latency_ms` | `float` | Wall-clock inference time (ms) |
@@ -43,7 +43,7 @@ result = predict(eeg)
 | Left fist clench | `left` | `LEFT` | `(0, 0, +1.5)` | Motor imagery maps to direction |
 | Right fist clench | `right` | `RIGHT` | `(0, 0, -1.5)` | Motor imagery maps to direction |
 | Both fists clench | `both` | `FORWARD` | `(0.6, 0, 0)` | Bilateral activation = "go" |
-| Tongue tap | `tongue` | `STOP` | `(0, 0, 0)` | Non-motor = stop signal |
+| Tongue tap | `tongue` | `BACKWARD` | `(-0.4, 0, 0)` | Distinct non-hand action = reverse |
 | Relax | `rest` | `STOP` | `(0, 0, 0)` | No intent = idle |
 
 **Gating:** If `is_above_threshold == false`, `robot_action` is forced to `STOP` regardless of `predicted_class`. This prevents jittery commands when the model is uncertain.
@@ -63,7 +63,7 @@ ACTION_MAP = {
     "left": Action.LEFT,
     "right": Action.RIGHT,
     "both": Action.FORWARD,
-    "tongue": Action.STOP,
+    "tongue": "BACKWARD",  # extend bri.Action for backward
     "rest": Action.STOP,
 }
 

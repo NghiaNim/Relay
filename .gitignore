@@ -209,3 +209,4 @@ __marimo__/
 # This repo specifics
 data/robot_control/
 reference/
+.DS_Store
