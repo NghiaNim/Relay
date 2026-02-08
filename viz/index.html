@@ -11,58 +11,49 @@
   .dashboard {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 48px 1fr 1fr;
-    gap: 12px;
-    padding: 12px;
+    grid-template-rows: 44px 1.2fr 0.8fr;
+    gap: 10px;
+    padding: 10px;
     height: 100vh;
     width: 100vw;
   }
 
-  /* Header */
   .header {
     grid-column: 1 / -1;
     display: flex; justify-content: space-between; align-items: center;
     padding: 0 16px;
     background: #111827; border-radius: 8px; border: 1px solid #1e293b;
   }
-  .header h1 { font-size: 16px; color: #38bdf8; letter-spacing: 2px; }
-  .header .meta { font-size: 12px; color: #64748b; display: flex; gap: 16px; align-items: center; }
+  .header h1 { font-size: 15px; color: #38bdf8; letter-spacing: 2px; }
+  .header .meta { font-size: 11px; color: #64748b; display: flex; gap: 14px; align-items: center; }
   .header .live { color: #22c55e; animation: pulse 1.5s infinite; }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
-  /* Panels */
   .panel {
     background: #111827; border: 1px solid #1e293b; border-radius: 10px;
-    padding: 12px; display: flex; flex-direction: column; overflow: hidden;
-    position: relative;
+    padding: 10px; display: flex; flex-direction: column; overflow: hidden;
   }
   .panel-title {
     font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px;
-    color: #475569; margin-bottom: 8px; flex-shrink: 0;
+    color: #475569; margin-bottom: 6px; flex-shrink: 0;
   }
   .panel canvas { flex: 1; width: 100%; display: block; }
 
-  /* Robot */
-  .robot-panel { align-items: center; justify-content: center; }
-
-  /* Confidence bars */
-  .bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
-  .bar-label { width: 55px; font-size: 11px; text-align: right; color: #94a3b8; }
-  .bar-track { flex: 1; height: 22px; background: #1e293b; border-radius: 3px; overflow: hidden; position: relative; }
-  .bar-fill { height: 100%; border-radius: 3px; transition: width 0.5s ease; min-width: 2px; }
+  .bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+  .bar-label { width: 65px; font-size: 11px; text-align: right; color: #94a3b8; }
+  .bar-track { flex: 1; height: 20px; background: #1e293b; border-radius: 3px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; border-radius: 3px; transition: width 0.4s ease; min-width: 2px; }
   .bar-pct { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-size: 10px; color: #cbd5e1; }
 
-  /* Decision */
-  .decision-panel { align-items: center; justify-content: center; gap: 10px; }
-  .cmd-text { font-size: 36px; font-weight: bold; letter-spacing: 3px; transition: color 0.3s; }
-  .gate-row { display: flex; align-items: center; gap: 8px; font-size: 12px; }
-  .gate-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .decision-panel { align-items: center; justify-content: center; gap: 8px; }
+  .cmd-text { font-size: 28px; font-weight: bold; letter-spacing: 3px; transition: color 0.3s; }
+  .gate-row { display: flex; align-items: center; gap: 8px; font-size: 11px; }
+  .gate-dot { width: 9px; height: 9px; border-radius: 50%; }
   .gate-dot.on { background: #22c55e; box-shadow: 0 0 8px #22c55e; }
   .gate-dot.off { background: #ef4444; box-shadow: 0 0 6px #ef4444; }
-  .conf-text { font-size: 13px; color: #94a3b8; }
-  .truth-badge { font-size: 11px; padding: 3px 10px; border-radius: 3px; background: #1e293b; color: #64748b; }
+  .conf-text { font-size: 12px; color: #94a3b8; }
+  .truth-badge { font-size: 10px; padding: 2px 8px; border-radius: 3px; background: #1e293b; color: #64748b; }
 
-  /* Loading overlay */
   #loadingOverlay {
     position: fixed; inset: 0; background: #0a0e17; display: flex;
     align-items: center; justify-content: center; z-index: 100;
@@ -80,20 +71,24 @@
     <div class="meta">
       <span><span class="live">●</span> LIVE</span>
       <span>Frame <span id="frameNum">0</span>/<span id="totalFrames">0</span></span>
+      <span id="actionLabel" style="color:#38bdf8">—</span>
       <span id="latency">0ms</span>
     </div>
   </div>
 
-  <div class="panel robot-panel">
-    <div class="panel-title">Robot State</div>
-    <canvas id="robotCanvas"></canvas>
+  <!-- Top-down grid with robot -->
+  <div class="panel">
+    <div class="panel-title">Robot Navigation Grid</div>
+    <canvas id="gridCanvas"></canvas>
   </div>
 
-  <div class="panel eeg-panel">
+  <!-- EEG waveforms -->
+  <div class="panel">
     <div class="panel-title">EEG Signal (6 channels)</div>
     <canvas id="eegCanvas"></canvas>
   </div>
 
+  <!-- Decision gate -->
   <div class="panel decision-panel">
     <div class="panel-title">Decision Gate</div>
     <div class="cmd-text" id="cmdText">—</div>
@@ -105,6 +100,7 @@
     <div class="truth-badge">Truth: <strong id="truthLabel">—</strong></div>
   </div>
 
+  <!-- Class probabilities -->
   <div class="panel">
     <div class="panel-title">Class Probabilities</div>
     <div id="bars" style="flex:1; display:flex; flex-direction:column; justify-content:center;"></div>
@@ -112,30 +108,39 @@
 </div>
 
 <script>
-const COLORS = { left:'#38bdf8', right:'#a78bfa', both:'#f472b6', tongue:'#fb923c', rest:'#475569' };
+const ACTION_COLORS = { FORWARD:'#22c55e', BACKWARD:'#f472b6', LEFT:'#38bdf8', RIGHT:'#a78bfa', STOP:'#475569' };
+const CLASS_COLORS = { left:'#38bdf8', right:'#a78bfa', both:'#22c55e', tongue:'#f472b6', rest:'#475569' };
 const CLASSES = ['left','right','both','tongue','rest'];
 const CH_NAMES = ['AFF6','AFp2','AFp1','AFF5','FCz','CPz'];
 const CH_COLORS = ['#38bdf8','#a78bfa','#f472b6','#fb923c','#22c55e','#facc15'];
 const TRUTH_MAP = {'Right Fist':'right','Left Fist':'left','Both Fists':'both','Tongue Tapping':'tongue','Relax':'rest'};
 
 let stream = [], frameIdx = 0, progress = 0;
-const FRAME_MS = 2500;
+const FRAME_MS = 2000;
 
-// Build bars
+// ── Robot state on grid ──
+const GRID_SIZE = 20;  // 20x20 grid
+let robotX = 10, robotY = 10;  // center start
+let robotHeading = -Math.PI / 2;  // facing up
+let targetX = 10, targetY = 10, targetHeading = -Math.PI / 2;
+let trail = [{x: 10, y: 10}];
+const MAX_TRAIL = 80;
+
+// Build probability bars
 const barsEl = document.getElementById('bars');
 CLASSES.forEach(c => {
   const row = document.createElement('div');
   row.className = 'bar-row';
-  row.innerHTML = `<div class="bar-label">${c}</div><div class="bar-track"><div class="bar-fill" id="bf-${c}" style="width:0;background:${COLORS[c]}"></div><div class="bar-pct" id="bp-${c}">0%</div></div>`;
+  row.innerHTML = `<div class="bar-label">${c}</div><div class="bar-track"><div class="bar-fill" id="bf-${c}" style="width:0;background:${CLASS_COLORS[c]}"></div><div class="bar-pct" id="bp-${c}">0%</div></div>`;
   barsEl.appendChild(row);
 });
 
-// Resize canvases to fill parent
+// Canvas resize
 function resizeCanvas(canvas) {
   const r = window.devicePixelRatio || 1;
   const rect = canvas.parentElement.getBoundingClientRect();
-  const w = rect.width - 24;
-  const h = rect.height - 40;
+  const w = rect.width - 20;
+  const h = rect.height - 36;
   canvas.width = w * r;
   canvas.height = h * r;
   canvas.style.width = w + 'px';
@@ -145,13 +150,12 @@ function resizeCanvas(canvas) {
   canvas._h = h;
 }
 
-const robotC = document.getElementById('robotCanvas');
+const gridC = document.getElementById('gridCanvas');
 const eegC = document.getElementById('eegCanvas');
-
-function onResize() { resizeCanvas(robotC); resizeCanvas(eegC); }
+function onResize() { resizeCanvas(gridC); resizeCanvas(eegC); }
 window.addEventListener('resize', onResize);
 
-// Load data
+// Load
 fetch('stream.json')
   .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
@@ -165,8 +169,8 @@ fetch('stream.json')
     document.getElementById('loadingOverlay').textContent = 'Error loading stream: ' + e.message;
   });
 
-// Main loop
-let lastT = 0, accum = 0;
+// ── Main loop ──
+let lastT = 0, accum = 0, prevFrame = -1;
 function loop(now) {
   if (!lastT) lastT = now;
   const dt = Math.min(now - lastT, 100);
@@ -175,153 +179,163 @@ function loop(now) {
   progress = Math.min(accum / FRAME_MS, 1);
 
   const f = stream[frameIdx];
-  drawRobot(f, progress);
+
+  // On new frame, compute target position
+  if (frameIdx !== prevFrame) {
+    prevFrame = frameIdx;
+    applyAction(f.robot_action);
+  }
+
+  // Smoothly interpolate robot position
+  robotX += (targetX - robotX) * 0.08;
+  robotY += (targetY - robotY) * 0.08;
+  robotHeading += angleDiff(robotHeading, targetHeading) * 0.1;
+
+  // Record trail
+  if (trail.length === 0 || dist(trail[trail.length-1], {x:robotX,y:robotY}) > 0.15) {
+    trail.push({x: robotX, y: robotY});
+    if (trail.length > MAX_TRAIL) trail.shift();
+  }
+
+  drawGrid(f);
   drawEEG(f, progress);
   updateBars(f);
   updateDecision(f);
   document.getElementById('frameNum').textContent = frameIdx + 1;
-  document.getElementById('latency').textContent = (5 + Math.random()*3).toFixed(1) + 'ms';
+  document.getElementById('latency').textContent = (f.inference_latency_ms || (5 + Math.random()*3)).toFixed(1) + 'ms';
+  document.getElementById('actionLabel').textContent = f.robot_action;
+  document.getElementById('actionLabel').style.color = ACTION_COLORS[f.robot_action] || '#64748b';
 
   if (accum >= FRAME_MS) {
     accum = 0;
     frameIdx = (frameIdx + 1) % stream.length;
+    if (frameIdx === 0) {
+      // Reset on loop
+      targetX = 10; targetY = 10; targetHeading = -Math.PI/2;
+      robotX = 10; robotY = 10; robotHeading = -Math.PI/2;
+      trail = [{x:10, y:10}];
+    }
   }
   requestAnimationFrame(loop);
 }
 
-// ── Robot ──
-function drawRobot(f, t) {
-  const ctx = robotC.getContext('2d');
-  const W = robotC._w, H = robotC._h;
+function applyAction(action) {
+  const STEP = 0.8;
+  const TURN = Math.PI / 4;  // 45°
+  switch(action) {
+    case 'FORWARD':
+      targetX += Math.cos(targetHeading) * STEP;
+      targetY += Math.sin(targetHeading) * STEP;
+      break;
+    case 'BACKWARD':
+      targetX -= Math.cos(targetHeading) * STEP * 0.6;
+      targetY -= Math.sin(targetHeading) * STEP * 0.6;
+      break;
+    case 'LEFT':
+      targetHeading -= TURN;
+      break;
+    case 'RIGHT':
+      targetHeading += TURN;
+      break;
+    // STOP: do nothing
+  }
+  // Clamp to grid
+  targetX = Math.max(0.5, Math.min(GRID_SIZE - 0.5, targetX));
+  targetY = Math.max(0.5, Math.min(GRID_SIZE - 0.5, targetY));
+}
+
+function angleDiff(from, to) {
+  let d = to - from;
+  while (d > Math.PI) d -= 2*Math.PI;
+  while (d < -Math.PI) d += 2*Math.PI;
+  return d;
+}
+function dist(a, b) { return Math.hypot(a.x-b.x, a.y-b.y); }
+function lerp(a,b,t) { return a + (b-a)*t; }
+
+// ── Grid drawing ──
+function drawGrid(f) {
+  const ctx = gridC.getContext('2d');
+  const W = gridC._w, H = gridC._h;
   ctx.save();
   ctx.setTransform(window.devicePixelRatio||1, 0, 0, window.devicePixelRatio||1, 0, 0);
   ctx.clearRect(0, 0, W, H);
 
-  const cmd = f.predicted_class;
-  const conf = f.confidence;
-  const color = COLORS[cmd] || '#475569';
-  const ease = Math.min(t * 3, 1); // fast ease-in
+  const cellW = W / GRID_SIZE;
+  const cellH = H / GRID_SIZE;
 
-  const cx = W/2, cy = H/2 - 20;
-  const headR = Math.min(W, H) * 0.07;
-  const bodyH = headR * 2.5;
-  const armLen = headR * 2;
-  const legLen = headR * 2.2;
-  const shoulderW = headR * 1.5;
-  const shoulderY = cy - bodyH/2 + headR*0.3;
-  const hipY = cy + bodyH/2;
+  // Grid lines
+  ctx.strokeStyle = '#1a2332';
+  ctx.lineWidth = 0.5;
+  for (let i = 0; i <= GRID_SIZE; i++) {
+    ctx.beginPath(); ctx.moveTo(i * cellW, 0); ctx.lineTo(i * cellW, H); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(0, i * cellH); ctx.lineTo(W, i * cellH); ctx.stroke();
+  }
 
-  ctx.lineCap = 'round';
-  ctx.lineJoin = 'round';
+  // Origin marker
+  const ox = 10 * cellW, oy = 10 * cellH;
+  ctx.strokeStyle = '#1e293b';
+  ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.arc(ox, oy, 4, 0, Math.PI*2); ctx.stroke();
+
+  // Trail
+  if (trail.length > 1) {
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    for (let i = 1; i < trail.length; i++) {
+      const alpha = (i / trail.length) * 0.6;
+      const action = f.robot_action;
+      const color = ACTION_COLORS[action] || '#475569';
+      ctx.strokeStyle = color;
+      ctx.globalAlpha = alpha;
+      ctx.lineWidth = 2 + (i / trail.length) * 2;
+      ctx.beginPath();
+      ctx.moveTo(trail[i-1].x * cellW, trail[i-1].y * cellH);
+      ctx.lineTo(trail[i].x * cellW, trail[i].y * cellH);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+  }
+
+  // Robot — triangle pointing in heading direction
+  const rx = robotX * cellW;
+  const ry = robotY * cellH;
+  const size = Math.min(cellW, cellH) * 0.8;
+  const action = f.robot_action;
+  const color = ACTION_COLORS[action] || '#475569';
 
   // Glow
   ctx.shadowColor = color;
-  ctx.shadowBlur = 25 * conf;
+  ctx.shadowBlur = 20;
 
-  // Head
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 3;
-  ctx.beginPath();
-  ctx.arc(cx, cy - bodyH/2 - headR - 8, headR, 0, Math.PI*2);
-  ctx.stroke();
-
-  // Eyes
-  ctx.shadowBlur = 0;
-  const eyeY = cy - bodyH/2 - headR - 12;
+  // Triangle
   ctx.fillStyle = color;
-  ctx.beginPath(); ctx.arc(cx - headR*0.35, eyeY, 3.5, 0, Math.PI*2); ctx.fill();
-  ctx.beginPath(); ctx.arc(cx + headR*0.35, eyeY, 3.5, 0, Math.PI*2); ctx.fill();
-
-  // Mouth / tongue
-  if (cmd === 'tongue') {
-    ctx.fillStyle = '#ef4444';
-    const tongueY = cy - bodyH/2 - headR + headR*0.6;
-    ctx.beginPath();
-    ctx.ellipse(cx, tongueY + 8*ease, 5, 10*ease, 0, 0, Math.PI*2);
-    ctx.fill();
-  } else {
-    // Simple smile line
-    ctx.strokeStyle = color;
-    ctx.lineWidth = 1.5;
-    ctx.beginPath();
-    const mouthY = cy - bodyH/2 - headR + headR*0.5;
-    ctx.arc(cx, mouthY - 4, 8, 0.2, Math.PI - 0.2);
-    ctx.stroke();
-  }
-
-  // Body
-  ctx.shadowColor = color;
-  ctx.shadowBlur = 12 * conf;
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 3;
-  ctx.beginPath(); ctx.moveTo(cx, cy - bodyH/2); ctx.lineTo(cx, hipY); ctx.stroke();
-
-  // Shoulders
-  ctx.beginPath(); ctx.moveTo(cx - shoulderW, shoulderY); ctx.lineTo(cx + shoulderW, shoulderY); ctx.stroke();
-
-  // Left arm
-  let lAngle = Math.PI/2 + 0.3; // resting
-  if (cmd === 'left' || cmd === 'both') lAngle = lerp(Math.PI/2 + 0.3, -Math.PI/6, ease);
-  ctx.lineWidth = 3;
   ctx.beginPath();
-  ctx.moveTo(cx - shoulderW, shoulderY);
-  const lx = cx - shoulderW + Math.cos(lAngle)*armLen;
-  const ly = shoulderY + Math.sin(lAngle)*armLen;
-  ctx.lineTo(lx, ly);
-  ctx.stroke();
-  // Fist indicator
-  if ((cmd === 'left' || cmd === 'both') && ease > 0.5) {
-    ctx.fillStyle = color;
-    ctx.beginPath(); ctx.arc(lx, ly, 6, 0, Math.PI*2); ctx.fill();
-  }
+  ctx.moveTo(rx + Math.cos(robotHeading) * size, ry + Math.sin(robotHeading) * size);
+  ctx.lineTo(rx + Math.cos(robotHeading + 2.5) * size * 0.55, ry + Math.sin(robotHeading + 2.5) * size * 0.55);
+  ctx.lineTo(rx + Math.cos(robotHeading - 2.5) * size * 0.55, ry + Math.sin(robotHeading - 2.5) * size * 0.55);
+  ctx.closePath();
+  ctx.fill();
 
-  // Right arm
-  let rAngle = Math.PI/2 - 0.3;
-  if (cmd === 'right' || cmd === 'both') rAngle = lerp(Math.PI/2 - 0.3, Math.PI + Math.PI/6, ease);
-  ctx.strokeStyle = color;
-  ctx.beginPath();
-  ctx.moveTo(cx + shoulderW, shoulderY);
-  const rx = cx + shoulderW + Math.cos(rAngle)*armLen;
-  const ry = shoulderY + Math.sin(rAngle)*armLen;
-  ctx.lineTo(rx, ry);
-  ctx.stroke();
-  if ((cmd === 'right' || cmd === 'both') && ease > 0.5) {
-    ctx.fillStyle = color;
-    ctx.beginPath(); ctx.arc(rx, ry, 6, 0, Math.PI*2); ctx.fill();
-  }
-
-  // Legs
-  ctx.shadowBlur = 4 * conf;
-  ctx.strokeStyle = color;
-  ctx.lineWidth = 3;
-  ctx.beginPath(); ctx.moveTo(cx, hipY); ctx.lineTo(cx - shoulderW*0.6, hipY + legLen); ctx.stroke();
-  ctx.beginPath(); ctx.moveTo(cx, hipY); ctx.lineTo(cx + shoulderW*0.6, hipY + legLen); ctx.stroke();
-
-  // Rest breathing aura
-  if (cmd === 'rest') {
-    const breathe = Math.sin(performance.now() / 800) * 6;
-    ctx.shadowBlur = 0;
-    ctx.strokeStyle = 'rgba(71,85,105,0.3)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.ellipse(cx, cy, shoulderW + 15 + breathe, bodyH/2 + 10 + breathe/2, 0, 0, Math.PI*2);
-    ctx.stroke();
-  }
-
-  // Label
+  // Inner dot
   ctx.shadowBlur = 0;
+  ctx.fillStyle = '#0a0e17';
+  ctx.beginPath(); ctx.arc(rx, ry, size * 0.15, 0, Math.PI*2); ctx.fill();
+
+  // Action label at bottom
   ctx.fillStyle = color;
-  ctx.font = 'bold 14px SF Mono, Fira Code, monospace';
+  ctx.font = 'bold 13px SF Mono, Fira Code, monospace';
   ctx.textAlign = 'center';
-  ctx.fillText(cmd.toUpperCase(), cx, H - 16);
-  ctx.font = '11px SF Mono, Fira Code, monospace';
-  ctx.fillStyle = '#64748b';
-  ctx.fillText(`${(conf*100).toFixed(0)}%`, cx, H - 2);
+  ctx.fillText(action, W/2, H - 8);
+
+  // Coordinates
+  ctx.fillStyle = '#475569';
+  ctx.font = '10px monospace';
+  ctx.textAlign = 'left';
+  ctx.fillText(`(${robotX.toFixed(1)}, ${robotY.toFixed(1)})  θ=${(robotHeading * 180 / Math.PI).toFixed(0)}°`, 6, H - 8);
 
   ctx.restore();
 }
-
-function lerp(a,b,t) { return a + (b-a)*t; }
 
 // ── EEG ──
 function drawEEG(f, progress) {
@@ -331,12 +345,12 @@ function drawEEG(f, progress) {
   ctx.setTransform(window.devicePixelRatio||1, 0, 0, window.devicePixelRatio||1, 0, 0);
   ctx.clearRect(0, 0, W, H);
 
-  const eeg = f.eeg; // pre-normalized [-1, 1], ~150 pts × 6ch
+  const eeg = f.eeg;
   const N = eeg.length;
   const showN = Math.max(2, Math.floor(N * progress));
   const chH = H / 6;
 
-  // Stim onset line at 3/15 = 20%
+  // Stim onset at 20%
   const stimX = W * 0.2;
   ctx.strokeStyle = '#1e293b';
   ctx.lineWidth = 1;
@@ -353,23 +367,18 @@ function drawEEG(f, progress) {
   ctx.lineWidth = 1.5;
   ctx.beginPath(); ctx.moveTo(phX, 0); ctx.lineTo(phX, H); ctx.stroke();
 
-  // Draw channels
   for (let ch = 0; ch < 6; ch++) {
     const yMid = chH * ch + chH / 2;
-
-    // Channel label
     ctx.fillStyle = CH_COLORS[ch] + '88';
     ctx.font = '9px monospace';
     ctx.fillText(CH_NAMES[ch], 3, yMid - chH/2 + 11);
 
-    // Separator
     if (ch > 0) {
       ctx.strokeStyle = '#1e293b';
       ctx.lineWidth = 0.5;
       ctx.beginPath(); ctx.moveTo(0, chH*ch); ctx.lineTo(W, chH*ch); ctx.stroke();
     }
 
-    // Waveform
     ctx.strokeStyle = CH_COLORS[ch];
     ctx.lineWidth = 1.2;
     ctx.globalAlpha = 0.9;
@@ -382,7 +391,6 @@ function drawEEG(f, progress) {
     ctx.stroke();
     ctx.globalAlpha = 1;
   }
-
   ctx.restore();
 }
 
@@ -398,9 +406,9 @@ function updateBars(f) {
 
 // ── Decision ──
 function updateDecision(f) {
-  const cmd = f.predicted_class;
-  const color = COLORS[cmd];
-  document.getElementById('cmdText').textContent = cmd.toUpperCase();
+  const action = f.robot_action;
+  const color = ACTION_COLORS[action];
+  document.getElementById('cmdText').textContent = action;
   document.getElementById('cmdText').style.color = color;
   document.getElementById('confPct').textContent = (f.confidence * 100).toFixed(1) + '%';
 
@@ -412,7 +420,7 @@ function updateDecision(f) {
     lbl.style.color = '#22c55e';
   } else {
     dot.className = 'gate-dot off';
-    lbl.textContent = 'Below threshold';
+    lbl.textContent = 'Below threshold — demo mode';
     lbl.style.color = '#ef4444';
   }
 
