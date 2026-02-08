@@ -1,0 +1,9 @@
+{
+  "accuracy": 0.19111111111111112,
+  "precision_macro": 0.2459639622005459,
+  "recall_macro": 0.19111111111111112,
+  "inference_mean_ms": 1.2671019449902814,
+  "inference_std_ms": 3.899074319421967,
+  "n_inference_runs": 5000,
+  "model_size_kb": 313.27734375
+}

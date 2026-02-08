@@ -1,0 +1,4727 @@
+[
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045345,
+    "inference_latency_ms": 17.54,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045362,
+    "inference_latency_ms": 16.99,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045381,
+    "inference_latency_ms": 18.75,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045399,
+    "inference_latency_ms": 16.9,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045416,
+    "inference_latency_ms": 16.15,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045429,
+    "inference_latency_ms": 13.26,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045443,
+    "inference_latency_ms": 13.98,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045456,
+    "inference_latency_ms": 12.04,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045469,
+    "inference_latency_ms": 13.28,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045484,
+    "inference_latency_ms": 14.13,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045497,
+    "inference_latency_ms": 12.81,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045511,
+    "inference_latency_ms": 13.99,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045534,
+    "inference_latency_ms": 22.47,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045551,
+    "inference_latency_ms": 16.86,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045564,
+    "inference_latency_ms": 13.53,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045577,
+    "inference_latency_ms": 13.06,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045590,
+    "inference_latency_ms": 12.49,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045602,
+    "inference_latency_ms": 11.86,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045618,
+    "inference_latency_ms": 14.9,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045635,
+    "inference_latency_ms": 16.95,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045650,
+    "inference_latency_ms": 14.99,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045665,
+    "inference_latency_ms": 14.95,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045678,
+    "inference_latency_ms": 12.91,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045692,
+    "inference_latency_ms": 13.46,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045704,
+    "inference_latency_ms": 11.29,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045720,
+    "inference_latency_ms": 15.86,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045732,
+    "inference_latency_ms": 12.49,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045745,
+    "inference_latency_ms": 12.11,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045755,
+    "inference_latency_ms": 10.61,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045767,
+    "inference_latency_ms": 11.14,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045779,
+    "inference_latency_ms": 11.92,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045791,
+    "inference_latency_ms": 12.16,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045804,
+    "inference_latency_ms": 12.53,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045815,
+    "inference_latency_ms": 11.04,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045827,
+    "inference_latency_ms": 11.61,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045840,
+    "inference_latency_ms": 12.22,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045852,
+    "inference_latency_ms": 12.34,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045863,
+    "inference_latency_ms": 10.82,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045875,
+    "inference_latency_ms": 11.27,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045885,
+    "inference_latency_ms": 10.32,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045897,
+    "inference_latency_ms": 11.81,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045908,
+    "inference_latency_ms": 10.97,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045921,
+    "inference_latency_ms": 12.3,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045933,
+    "inference_latency_ms": 11.45,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045945,
+    "inference_latency_ms": 12.41,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2014,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045957,
+    "inference_latency_ms": 11.62,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045969,
+    "inference_latency_ms": 11.81,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045981,
+    "inference_latency_ms": 12.15,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2014,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559045993,
+    "inference_latency_ms": 11.47,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046006,
+    "inference_latency_ms": 12.16,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046016,
+    "inference_latency_ms": 10.39,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046027,
+    "inference_latency_ms": 11.05,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046039,
+    "inference_latency_ms": 10.92,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046050,
+    "inference_latency_ms": 10.85,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046062,
+    "inference_latency_ms": 12.02,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046074,
+    "inference_latency_ms": 12.28,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046087,
+    "inference_latency_ms": 12.33,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046098,
+    "inference_latency_ms": 10.77,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046110,
+    "inference_latency_ms": 11.55,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046123,
+    "inference_latency_ms": 12.86,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046135,
+    "inference_latency_ms": 12.2,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046146,
+    "inference_latency_ms": 10.85,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046157,
+    "inference_latency_ms": 10.93,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046171,
+    "inference_latency_ms": 12.91,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046185,
+    "inference_latency_ms": 14.43,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046203,
+    "inference_latency_ms": 17.22,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046217,
+    "inference_latency_ms": 13.03,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046231,
+    "inference_latency_ms": 13.86,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046245,
+    "inference_latency_ms": 13.52,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046257,
+    "inference_latency_ms": 12.47,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046270,
+    "inference_latency_ms": 12.39,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046282,
+    "inference_latency_ms": 11.67,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046294,
+    "inference_latency_ms": 12.45,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046307,
+    "inference_latency_ms": 12.5,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046320,
+    "inference_latency_ms": 12.32,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046332,
+    "inference_latency_ms": 12.41,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046347,
+    "inference_latency_ms": 14.21,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046361,
+    "inference_latency_ms": 13.56,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046375,
+    "inference_latency_ms": 14.01,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046388,
+    "inference_latency_ms": 12.47,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046407,
+    "inference_latency_ms": 18.81,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046419,
+    "inference_latency_ms": 11.87,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046432,
+    "inference_latency_ms": 12.66,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046444,
+    "inference_latency_ms": 11.8,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046457,
+    "inference_latency_ms": 13.01,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046470,
+    "inference_latency_ms": 12.18,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046481,
+    "inference_latency_ms": 10.75,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046494,
+    "inference_latency_ms": 13.43,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046508,
+    "inference_latency_ms": 13.69,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046521,
+    "inference_latency_ms": 12.02,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046534,
+    "inference_latency_ms": 12.64,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046545,
+    "inference_latency_ms": 11.32,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046557,
+    "inference_latency_ms": 12.11,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046569,
+    "inference_latency_ms": 11.81,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046581,
+    "inference_latency_ms": 11.36,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046591,
+    "inference_latency_ms": 10.17,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046603,
+    "inference_latency_ms": 11.09,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046616,
+    "inference_latency_ms": 13.05,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046629,
+    "inference_latency_ms": 13.19,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046643,
+    "inference_latency_ms": 13.2,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046654,
+    "inference_latency_ms": 11.04,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046667,
+    "inference_latency_ms": 12.23,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046679,
+    "inference_latency_ms": 11.87,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046691,
+    "inference_latency_ms": 11.79,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046703,
+    "inference_latency_ms": 12.13,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046715,
+    "inference_latency_ms": 11.03,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.195,
+      "left": 0.2032,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046726,
+    "inference_latency_ms": 11.56,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046738,
+    "inference_latency_ms": 11.49,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046751,
+    "inference_latency_ms": 12.36,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046763,
+    "inference_latency_ms": 12.38,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046776,
+    "inference_latency_ms": 12.93,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046789,
+    "inference_latency_ms": 12.19,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046804,
+    "inference_latency_ms": 15.22,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046819,
+    "inference_latency_ms": 13.95,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046832,
+    "inference_latency_ms": 13.17,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046845,
+    "inference_latency_ms": 13.0,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046860,
+    "inference_latency_ms": 14.53,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046873,
+    "inference_latency_ms": 12.85,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046886,
+    "inference_latency_ms": 12.33,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046900,
+    "inference_latency_ms": 14.22,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046922,
+    "inference_latency_ms": 21.87,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046937,
+    "inference_latency_ms": 14.67,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046950,
+    "inference_latency_ms": 12.7,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046962,
+    "inference_latency_ms": 11.88,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046977,
+    "inference_latency_ms": 14.47,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559046991,
+    "inference_latency_ms": 13.71,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047006,
+    "inference_latency_ms": 14.3,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047019,
+    "inference_latency_ms": 12.98,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1957,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047033,
+    "inference_latency_ms": 13.78,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047054,
+    "inference_latency_ms": 20.88,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047070,
+    "inference_latency_ms": 15.2,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047084,
+    "inference_latency_ms": 14.44,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047098,
+    "inference_latency_ms": 13.43,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047110,
+    "inference_latency_ms": 11.6,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047122,
+    "inference_latency_ms": 12.38,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047135,
+    "inference_latency_ms": 12.51,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047154,
+    "inference_latency_ms": 18.44,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047167,
+    "inference_latency_ms": 12.91,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047201,
+    "inference_latency_ms": 33.29,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047219,
+    "inference_latency_ms": 17.23,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2016,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047231,
+    "inference_latency_ms": 12.68,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047250,
+    "inference_latency_ms": 17.7,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047264,
+    "inference_latency_ms": 14.1,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047278,
+    "inference_latency_ms": 14.15,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047289,
+    "inference_latency_ms": 10.68,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047302,
+    "inference_latency_ms": 12.2,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2016,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047315,
+    "inference_latency_ms": 12.62,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2016,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047330,
+    "inference_latency_ms": 15.38,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047345,
+    "inference_latency_ms": 14.79,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047358,
+    "inference_latency_ms": 12.54,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047372,
+    "inference_latency_ms": 13.39,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047384,
+    "inference_latency_ms": 11.65,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047400,
+    "inference_latency_ms": 15.98,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047414,
+    "inference_latency_ms": 13.42,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047427,
+    "inference_latency_ms": 13.06,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047440,
+    "inference_latency_ms": 12.85,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047459,
+    "inference_latency_ms": 18.43,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047472,
+    "inference_latency_ms": 13.48,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047487,
+    "inference_latency_ms": 14.61,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047502,
+    "inference_latency_ms": 13.96,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047513,
+    "inference_latency_ms": 11.5,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047527,
+    "inference_latency_ms": 12.98,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047537,
+    "inference_latency_ms": 10.52,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047549,
+    "inference_latency_ms": 11.45,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047561,
+    "inference_latency_ms": 11.92,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047572,
+    "inference_latency_ms": 10.78,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047582,
+    "inference_latency_ms": 10.31,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047595,
+    "inference_latency_ms": 12.24,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047608,
+    "inference_latency_ms": 13.02,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047620,
+    "inference_latency_ms": 12.16,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047634,
+    "inference_latency_ms": 13.54,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047647,
+    "inference_latency_ms": 13.07,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047658,
+    "inference_latency_ms": 10.28,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2016,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047669,
+    "inference_latency_ms": 11.3,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047680,
+    "inference_latency_ms": 10.83,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047691,
+    "inference_latency_ms": 10.22,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047703,
+    "inference_latency_ms": 11.65,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047714,
+    "inference_latency_ms": 11.49,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047726,
+    "inference_latency_ms": 11.11,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1949,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047737,
+    "inference_latency_ms": 10.74,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047748,
+    "inference_latency_ms": 10.87,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047759,
+    "inference_latency_ms": 10.59,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047770,
+    "inference_latency_ms": 10.78,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047781,
+    "inference_latency_ms": 11.4,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047793,
+    "inference_latency_ms": 11.7,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047805,
+    "inference_latency_ms": 12.05,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047816,
+    "inference_latency_ms": 10.83,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047831,
+    "inference_latency_ms": 14.86,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559047849,
+    "inference_latency_ms": 17.08,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048001,
+    "inference_latency_ms": 151.55,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048019,
+    "inference_latency_ms": 17.98,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048031,
+    "inference_latency_ms": 11.57,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048042,
+    "inference_latency_ms": 10.7,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048053,
+    "inference_latency_ms": 10.56,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048065,
+    "inference_latency_ms": 11.98,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048076,
+    "inference_latency_ms": 10.85,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048088,
+    "inference_latency_ms": 11.42,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048100,
+    "inference_latency_ms": 11.94,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048112,
+    "inference_latency_ms": 11.85,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048125,
+    "inference_latency_ms": 12.83,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048136,
+    "inference_latency_ms": 10.3,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048147,
+    "inference_latency_ms": 11.15,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048159,
+    "inference_latency_ms": 11.76,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048174,
+    "inference_latency_ms": 14.69,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048193,
+    "inference_latency_ms": 18.85,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048206,
+    "inference_latency_ms": 12.84,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048218,
+    "inference_latency_ms": 11.51,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048228,
+    "inference_latency_ms": 9.63,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048240,
+    "inference_latency_ms": 11.31,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048251,
+    "inference_latency_ms": 11.01,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048263,
+    "inference_latency_ms": 11.58,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048273,
+    "inference_latency_ms": 10.31,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048285,
+    "inference_latency_ms": 11.25,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048295,
+    "inference_latency_ms": 10.56,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048306,
+    "inference_latency_ms": 10.83,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048318,
+    "inference_latency_ms": 11.63,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048330,
+    "inference_latency_ms": 11.82,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048342,
+    "inference_latency_ms": 11.69,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2048,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2048
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048355,
+    "inference_latency_ms": 12.14,
+    "true_class": "right"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048369,
+    "inference_latency_ms": 13.98,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048384,
+    "inference_latency_ms": 14.63,
+    "true_class": "left"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048398,
+    "inference_latency_ms": 13.65,
+    "true_class": "rest"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048412,
+    "inference_latency_ms": 13.68,
+    "true_class": "tongue"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2033,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048425,
+    "inference_latency_ms": 12.99,
+    "true_class": "both"
+  },
+  {
+    "predicted_class": "tongue",
+    "confidence": 0.2047,
+    "all_probabilities": {
+      "both": 0.1948,
+      "left": 0.2032,
+      "rest": 0.1956,
+      "right": 0.2015,
+      "tongue": 0.2047
+    },
+    "is_above_threshold": false,
+    "robot_action": "STOP",
+    "cmd_vel": {
+      "vx": 0.0,
+      "vy": 0.0,
+      "yaw_rate": 0.0
+    },
+    "timestamp_ms": 1770559048439,
+    "inference_latency_ms": 13.59,
+    "true_class": "right"
+  }
+]

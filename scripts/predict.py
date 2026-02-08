@@ -16,6 +16,7 @@ config = _bundle["config"]
 BANDS = config["bands"]
 FS = config["fs"]
 STIM_ONSET = config["stim_onset"]
+WINDOW_SAMPLES = config.get("window_samples")  # None = use full rest of trial
 CONFIDENCE_THRESHOLD = 0.5
 
 # EEG class → robot action mapping
@@ -39,7 +40,12 @@ CMD_VEL_MAP = {
 def extract_features(eeg):
     """Band-power + stats features from stimulus window."""
     cut = int(STIM_ONSET * FS)
-    stim = eeg[cut:] if eeg.shape[0] > cut else eeg
+    if WINDOW_SAMPLES is not None:
+        stim = eeg[cut:cut + WINDOW_SAMPLES] if eeg.shape[0] > cut else eeg
+        if stim.shape[0] < WINDOW_SAMPLES:
+            stim = np.pad(stim, ((0, WINDOW_SAMPLES - stim.shape[0]), (0, 0)))
+    else:
+        stim = eeg[cut:] if eeg.shape[0] > cut else eeg
     if np.isnan(stim).any():
         stim = np.nan_to_num(stim, nan=0.0)
 
@@ -67,7 +73,18 @@ def predict(eeg_window: np.ndarray, threshold: float = CONFIDENCE_THRESHOLD) -> 
         dict matching the output contract (see gameplan/output_contract.md)
     """
     t_start = time.time()
-    feats = extract_features(eeg_window).reshape(1, -1)
+    if config.get("preprocess"):
+        import sys
+        import os
+        _dir = os.path.dirname(os.path.abspath(__file__))
+        if _dir not in sys.path:
+            sys.path.insert(0, _dir)
+        import data_utils
+        eeg_window = data_utils.preprocess_eeg(eeg_window)
+        feats = data_utils.extract_bandpower_features(eeg_window)
+    else:
+        feats = extract_features(eeg_window)
+    feats = feats.reshape(1, -1)
     proba = pipeline.predict_proba(feats)[0]
     pred_idx = proba.argmax()
     latency = (time.time() - t_start) * 1000

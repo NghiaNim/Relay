@@ -22,7 +22,7 @@ import joblib
 warnings.filterwarnings("ignore")
 
 # ── Config ──
-DATA_DIR = "data/robot_control/data"
+DATA_DIR = "../robot_control/data"
 FS = 500
 STIM_ONSET = 3.0
 BANDS = {"delta": (1, 4), "theta": (4, 8), "alpha": (8, 13), "beta": (13, 30), "gamma": (30, 45)}
