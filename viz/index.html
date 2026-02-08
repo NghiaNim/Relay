@@ -73,6 +73,11 @@
       <span>Frame <span id="frameNum">0</span>/<span id="totalFrames">0</span></span>
       <span id="actionLabel" style="color:#38bdf8">—</span>
       <span id="latency">0ms</span>
+      <span style="display:flex;align-items:center;gap:4px">
+        <label for="speedSlider" style="font-size:10px;color:#475569">Speed</label>
+        <input type="range" id="speedSlider" min="100" max="3000" value="600" step="50" style="width:80px;accent-color:#38bdf8;height:12px">
+        <span id="speedLabel" style="font-size:10px;color:#94a3b8;min-width:36px">600ms</span>
+      </span>
     </div>
   </div>
 
@@ -116,7 +121,7 @@ const CH_COLORS = ['#38bdf8','#a78bfa','#f472b6','#fb923c','#22c55e','#facc15'];
 const TRUTH_MAP = {'Right Fist':'right','Left Fist':'left','Both Fists':'both','Tongue Tapping':'tongue','Relax':'rest'};
 
 let stream = [], frameIdx = 0, progress = 0;
-const FRAME_MS = 2000;
+let FRAME_MS = 600; // adjustable via slider
 
 // ── Robot state on grid ──
 const GRID_SIZE = 20;  // 20x20 grid
@@ -154,6 +159,14 @@ const gridC = document.getElementById('gridCanvas');
 const eegC = document.getElementById('eegCanvas');
 function onResize() { resizeCanvas(gridC); resizeCanvas(eegC); }
 window.addEventListener('resize', onResize);
+
+// Speed slider
+const speedSlider = document.getElementById('speedSlider');
+const speedLabel = document.getElementById('speedLabel');
+speedSlider.addEventListener('input', () => {
+  FRAME_MS = parseInt(speedSlider.value);
+  speedLabel.textContent = FRAME_MS + 'ms';
+});
 
 // Load
 fetch('stream.json')
