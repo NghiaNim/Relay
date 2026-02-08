@@ -22,12 +22,17 @@ Build the intent decoder. Takes a windowed EEG signal, outputs a prediction.
 {
   "predicted_class": "left",
   "confidence": 0.87,
-  "all_probabilities": {"left": 0.87, "right": 0.04, "forward": 0.03, "backward": 0.02, "rest": 0.04},
+  "all_probabilities": {"left": 0.87, "right": 0.04, "both": 0.03, "tongue": 0.02, "rest": 0.04},
   "is_above_threshold": true,
+  "robot_action": "LEFT",
+  "cmd_vel": {"vx": 0.0, "vy": 0.0, "yaw_rate": 1.5},
   "timestamp_ms": 1702847362000,
   "inference_latency_ms": 4.2
 }
 ```
+
+**EEG → Robot mapping:** `left`→LEFT, `right`→RIGHT, `both`→FORWARD, `tongue`/`rest`→STOP.
+Gated by confidence: if `is_above_threshold == false`, force STOP.
 
 **Deliverables:**
 1. Preprocessing pipeline (windowing, filtering)

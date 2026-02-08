@@ -18,6 +18,22 @@ FS = config["fs"]
 STIM_ONSET = config["stim_onset"]
 CONFIDENCE_THRESHOLD = 0.5
 
+# EEG class → robot action mapping (matches bri.Action enum)
+ACTION_MAP = {
+    "left": "LEFT",
+    "right": "RIGHT",
+    "both": "FORWARD",
+    "tongue": "STOP",
+    "rest": "STOP",
+}
+
+CMD_VEL_MAP = {
+    "FORWARD": {"vx": 0.6, "vy": 0.0, "yaw_rate": 0.0},
+    "LEFT":    {"vx": 0.0, "vy": 0.0, "yaw_rate": 1.5},
+    "RIGHT":   {"vx": 0.0, "vy": 0.0, "yaw_rate": -1.5},
+    "STOP":    {"vx": 0.0, "vy": 0.0, "yaw_rate": 0.0},
+}
+
 
 def extract_features(eeg):
     """Band-power + stats features from stimulus window."""
@@ -56,11 +72,19 @@ def predict(eeg_window: np.ndarray, threshold: float = CONFIDENCE_THRESHOLD) -> 
     latency = (time.time() - t_start) * 1000
 
     classes = label_encoder.classes_.tolist()
+    predicted = classes[pred_idx]
+    above = float(proba[pred_idx]) > threshold
+
+    # Robot action: gated by confidence threshold
+    robot_action = ACTION_MAP[predicted] if above else "STOP"
+
     return {
-        "predicted_class": classes[pred_idx],
+        "predicted_class": predicted,
         "confidence": round(float(proba[pred_idx]), 4),
         "all_probabilities": {c: round(float(p), 4) for c, p in zip(classes, proba)},
-        "is_above_threshold": float(proba[pred_idx]) > threshold,
+        "is_above_threshold": above,
+        "robot_action": robot_action,
+        "cmd_vel": CMD_VEL_MAP[robot_action],
         "timestamp_ms": int(time.time() * 1000),
         "inference_latency_ms": round(latency, 2),
     }

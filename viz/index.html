@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relay — BCI Robot Control</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0e17; color: #e0e6ed; font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; overflow: hidden; }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 48px 1fr 1fr;
+    gap: 12px;
+    padding: 12px;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* Header */
+  .header {
+    grid-column: 1 / -1;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 16px;
+    background: #111827; border-radius: 8px; border: 1px solid #1e293b;
+  }
+  .header h1 { font-size: 16px; color: #38bdf8; letter-spacing: 2px; }
+  .header .meta { font-size: 12px; color: #64748b; display: flex; gap: 16px; align-items: center; }
+  .header .live { color: #22c55e; animation: pulse 1.5s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  /* Panels */
+  .panel {
+    background: #111827; border: 1px solid #1e293b; border-radius: 10px;
+    padding: 12px; display: flex; flex-direction: column; overflow: hidden;
+    position: relative;
+  }
+  .panel-title {
+    font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px;
+    color: #475569; margin-bottom: 8px; flex-shrink: 0;
+  }
+  .panel canvas { flex: 1; width: 100%; display: block; }
+
+  /* Robot */
+  .robot-panel { align-items: center; justify-content: center; }
+
+  /* Confidence bars */
+  .bar-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .bar-label { width: 55px; font-size: 11px; text-align: right; color: #94a3b8; }
+  .bar-track { flex: 1; height: 22px; background: #1e293b; border-radius: 3px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; border-radius: 3px; transition: width 0.5s ease; min-width: 2px; }
+  .bar-pct { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-size: 10px; color: #cbd5e1; }
+
+  /* Decision */
+  .decision-panel { align-items: center; justify-content: center; gap: 10px; }
+  .cmd-text { font-size: 36px; font-weight: bold; letter-spacing: 3px; transition: color 0.3s; }
+  .gate-row { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+  .gate-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .gate-dot.on { background: #22c55e; box-shadow: 0 0 8px #22c55e; }
+  .gate-dot.off { background: #ef4444; box-shadow: 0 0 6px #ef4444; }
+  .conf-text { font-size: 13px; color: #94a3b8; }
+  .truth-badge { font-size: 11px; padding: 3px 10px; border-radius: 3px; background: #1e293b; color: #64748b; }
+
+  /* Loading overlay */
+  #loadingOverlay {
+    position: fixed; inset: 0; background: #0a0e17; display: flex;
+    align-items: center; justify-content: center; z-index: 100;
+    font-size: 14px; color: #64748b;
+  }
+  #loadingOverlay.hidden { display: none; }
+</style>
+</head>
+<body>
+<div id="loadingOverlay">Loading stream data...</div>
+
+<div class="dashboard">
+  <div class="header">
+    <h1>⚡ RELAY — Brain → Robot</h1>
+    <div class="meta">
+      <span><span class="live">●</span> LIVE</span>
+      <span>Frame <span id="frameNum">0</span>/<span id="totalFrames">0</span></span>
+      <span id="latency">0ms</span>
+    </div>
+  </div>
+
+  <div class="panel robot-panel">
+    <div class="panel-title">Robot State</div>
+    <canvas id="robotCanvas"></canvas>
+  </div>
+
+  <div class="panel eeg-panel">
+    <div class="panel-title">EEG Signal (6 channels)</div>
+    <canvas id="eegCanvas"></canvas>
+  </div>
+
+  <div class="panel decision-panel">
+    <div class="panel-title">Decision Gate</div>
+    <div class="cmd-text" id="cmdText">—</div>
+    <div class="gate-row">
+      <div class="gate-dot off" id="gateDot"></div>
+      <span id="gateLabel">Waiting...</span>
+    </div>
+    <div class="conf-text">Confidence: <strong id="confPct">0%</strong></div>
+    <div class="truth-badge">Truth: <strong id="truthLabel">—</strong></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title">Class Probabilities</div>
+    <div id="bars" style="flex:1; display:flex; flex-direction:column; justify-content:center;"></div>
+  </div>
+</div>
+
+<script>
+const COLORS = { left:'#38bdf8', right:'#a78bfa', both:'#f472b6', tongue:'#fb923c', rest:'#475569' };
+const CLASSES = ['left','right','both','tongue','rest'];
+const CH_NAMES = ['AFF6','AFp2','AFp1','AFF5','FCz','CPz'];
+const CH_COLORS = ['#38bdf8','#a78bfa','#f472b6','#fb923c','#22c55e','#facc15'];
+const TRUTH_MAP = {'Right Fist':'right','Left Fist':'left','Both Fists':'both','Tongue Tapping':'tongue','Relax':'rest'};
+
+let stream = [], frameIdx = 0, progress = 0;
+const FRAME_MS = 2500;
+
+// Build bars
+const barsEl = document.getElementById('bars');
+CLASSES.forEach(c => {
+  const row = document.createElement('div');
+  row.className = 'bar-row';
+  row.innerHTML = `<div class="bar-label">${c}</div><div class="bar-track"><div class="bar-fill" id="bf-${c}" style="width:0;background:${COLORS[c]}"></div><div class="bar-pct" id="bp-${c}">0%</div></div>`;
+  barsEl.appendChild(row);
+});
+
+// Resize canvases to fill parent
+function resizeCanvas(canvas) {
+  const r = window.devicePixelRatio || 1;
+  const rect = canvas.parentElement.getBoundingClientRect();
+  const w = rect.width - 24;
+  const h = rect.height - 40;
+  canvas.width = w * r;
+  canvas.height = h * r;
+  canvas.style.width = w + 'px';
+  canvas.style.height = h + 'px';
+  canvas.getContext('2d').scale(r, r);
+  canvas._w = w;
+  canvas._h = h;
+}
+
+const robotC = document.getElementById('robotCanvas');
+const eegC = document.getElementById('eegCanvas');
+
+function onResize() { resizeCanvas(robotC); resizeCanvas(eegC); }
+window.addEventListener('resize', onResize);
+
+// Load data
+fetch('stream.json')
+  .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    stream = data;
+    document.getElementById('totalFrames').textContent = stream.length;
+    document.getElementById('loadingOverlay').classList.add('hidden');
+    onResize();
+    requestAnimationFrame(loop);
+  })
+  .catch(e => {
+    document.getElementById('loadingOverlay').textContent = 'Error loading stream: ' + e.message;
+  });
+
+// Main loop
+let lastT = 0, accum = 0;
+function loop(now) {
+  if (!lastT) lastT = now;
+  const dt = Math.min(now - lastT, 100);
+  lastT = now;
+  accum += dt;
+  progress = Math.min(accum / FRAME_MS, 1);
+
+  const f = stream[frameIdx];
+  drawRobot(f, progress);
+  drawEEG(f, progress);
+  updateBars(f);
+  updateDecision(f);
+  document.getElementById('frameNum').textContent = frameIdx + 1;
+  document.getElementById('latency').textContent = (5 + Math.random()*3).toFixed(1) + 'ms';
+
+  if (accum >= FRAME_MS) {
+    accum = 0;
+    frameIdx = (frameIdx + 1) % stream.length;
+  }
+  requestAnimationFrame(loop);
+}
+
+// ── Robot ──
+function drawRobot(f, t) {
+  const ctx = robotC.getContext('2d');
+  const W = robotC._w, H = robotC._h;
+  ctx.save();
+  ctx.setTransform(window.devicePixelRatio||1, 0, 0, window.devicePixelRatio||1, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+
+  const cmd = f.predicted_class;
+  const conf = f.confidence;
+  const color = COLORS[cmd] || '#475569';
+  const ease = Math.min(t * 3, 1); // fast ease-in
+
+  const cx = W/2, cy = H/2 - 20;
+  const headR = Math.min(W, H) * 0.07;
+  const bodyH = headR * 2.5;
+  const armLen = headR * 2;
+  const legLen = headR * 2.2;
+  const shoulderW = headR * 1.5;
+  const shoulderY = cy - bodyH/2 + headR*0.3;
+  const hipY = cy + bodyH/2;
+
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+
+  // Glow
+  ctx.shadowColor = color;
+  ctx.shadowBlur = 25 * conf;
+
+  // Head
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.arc(cx, cy - bodyH/2 - headR - 8, headR, 0, Math.PI*2);
+  ctx.stroke();
+
+  // Eyes
+  ctx.shadowBlur = 0;
+  const eyeY = cy - bodyH/2 - headR - 12;
+  ctx.fillStyle = color;
+  ctx.beginPath(); ctx.arc(cx - headR*0.35, eyeY, 3.5, 0, Math.PI*2); ctx.fill();
+  ctx.beginPath(); ctx.arc(cx + headR*0.35, eyeY, 3.5, 0, Math.PI*2); ctx.fill();
+
+  // Mouth / tongue
+  if (cmd === 'tongue') {
+    ctx.fillStyle = '#ef4444';
+    const tongueY = cy - bodyH/2 - headR + headR*0.6;
+    ctx.beginPath();
+    ctx.ellipse(cx, tongueY + 8*ease, 5, 10*ease, 0, 0, Math.PI*2);
+    ctx.fill();
+  } else {
+    // Simple smile line
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    const mouthY = cy - bodyH/2 - headR + headR*0.5;
+    ctx.arc(cx, mouthY - 4, 8, 0.2, Math.PI - 0.2);
+    ctx.stroke();
+  }
+
+  // Body
+  ctx.shadowColor = color;
+  ctx.shadowBlur = 12 * conf;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(cx, cy - bodyH/2); ctx.lineTo(cx, hipY); ctx.stroke();
+
+  // Shoulders
+  ctx.beginPath(); ctx.moveTo(cx - shoulderW, shoulderY); ctx.lineTo(cx + shoulderW, shoulderY); ctx.stroke();
+
+  // Left arm
+  let lAngle = Math.PI/2 + 0.3; // resting
+  if (cmd === 'left' || cmd === 'both') lAngle = lerp(Math.PI/2 + 0.3, -Math.PI/6, ease);
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(cx - shoulderW, shoulderY);
+  const lx = cx - shoulderW + Math.cos(lAngle)*armLen;
+  const ly = shoulderY + Math.sin(lAngle)*armLen;
+  ctx.lineTo(lx, ly);
+  ctx.stroke();
+  // Fist indicator
+  if ((cmd === 'left' || cmd === 'both') && ease > 0.5) {
+    ctx.fillStyle = color;
+    ctx.beginPath(); ctx.arc(lx, ly, 6, 0, Math.PI*2); ctx.fill();
+  }
+
+  // Right arm
+  let rAngle = Math.PI/2 - 0.3;
+  if (cmd === 'right' || cmd === 'both') rAngle = lerp(Math.PI/2 - 0.3, Math.PI + Math.PI/6, ease);
+  ctx.strokeStyle = color;
+  ctx.beginPath();
+  ctx.moveTo(cx + shoulderW, shoulderY);
+  const rx = cx + shoulderW + Math.cos(rAngle)*armLen;
+  const ry = shoulderY + Math.sin(rAngle)*armLen;
+  ctx.lineTo(rx, ry);
+  ctx.stroke();
+  if ((cmd === 'right' || cmd === 'both') && ease > 0.5) {
+    ctx.fillStyle = color;
+    ctx.beginPath(); ctx.arc(rx, ry, 6, 0, Math.PI*2); ctx.fill();
+  }
+
+  // Legs
+  ctx.shadowBlur = 4 * conf;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 3;
+  ctx.beginPath(); ctx.moveTo(cx, hipY); ctx.lineTo(cx - shoulderW*0.6, hipY + legLen); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(cx, hipY); ctx.lineTo(cx + shoulderW*0.6, hipY + legLen); ctx.stroke();
+
+  // Rest breathing aura
+  if (cmd === 'rest') {
+    const breathe = Math.sin(performance.now() / 800) * 6;
+    ctx.shadowBlur = 0;
+    ctx.strokeStyle = 'rgba(71,85,105,0.3)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.ellipse(cx, cy, shoulderW + 15 + breathe, bodyH/2 + 10 + breathe/2, 0, 0, Math.PI*2);
+    ctx.stroke();
+  }
+
+  // Label
+  ctx.shadowBlur = 0;
+  ctx.fillStyle = color;
+  ctx.font = 'bold 14px SF Mono, Fira Code, monospace';
+  ctx.textAlign = 'center';
+  ctx.fillText(cmd.toUpperCase(), cx, H - 16);
+  ctx.font = '11px SF Mono, Fira Code, monospace';
+  ctx.fillStyle = '#64748b';
+  ctx.fillText(`${(conf*100).toFixed(0)}%`, cx, H - 2);
+
+  ctx.restore();
+}
+
+function lerp(a,b,t) { return a + (b-a)*t; }
+
+// ── EEG ──
+function drawEEG(f, progress) {
+  const ctx = eegC.getContext('2d');
+  const W = eegC._w, H = eegC._h;
+  ctx.save();
+  ctx.setTransform(window.devicePixelRatio||1, 0, 0, window.devicePixelRatio||1, 0, 0);
+  ctx.clearRect(0, 0, W, H);
+
+  const eeg = f.eeg; // pre-normalized [-1, 1], ~150 pts × 6ch
+  const N = eeg.length;
+  const showN = Math.max(2, Math.floor(N * progress));
+  const chH = H / 6;
+
+  // Stim onset line at 3/15 = 20%
+  const stimX = W * 0.2;
+  ctx.strokeStyle = '#1e293b';
+  ctx.lineWidth = 1;
+  ctx.setLineDash([3,3]);
+  ctx.beginPath(); ctx.moveTo(stimX, 0); ctx.lineTo(stimX, H); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle = '#334155';
+  ctx.font = '9px monospace';
+  ctx.fillText('stim', stimX + 3, 10);
+
+  // Playhead
+  const phX = (showN / N) * W;
+  ctx.strokeStyle = '#22c55e33';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.moveTo(phX, 0); ctx.lineTo(phX, H); ctx.stroke();
+
+  // Draw channels
+  for (let ch = 0; ch < 6; ch++) {
+    const yMid = chH * ch + chH / 2;
+
+    // Channel label
+    ctx.fillStyle = CH_COLORS[ch] + '88';
+    ctx.font = '9px monospace';
+    ctx.fillText(CH_NAMES[ch], 3, yMid - chH/2 + 11);
+
+    // Separator
+    if (ch > 0) {
+      ctx.strokeStyle = '#1e293b';
+      ctx.lineWidth = 0.5;
+      ctx.beginPath(); ctx.moveTo(0, chH*ch); ctx.lineTo(W, chH*ch); ctx.stroke();
+    }
+
+    // Waveform
+    ctx.strokeStyle = CH_COLORS[ch];
+    ctx.lineWidth = 1.2;
+    ctx.globalAlpha = 0.9;
+    ctx.beginPath();
+    for (let i = 0; i < showN; i++) {
+      const x = (i / N) * W;
+      const y = yMid - eeg[i][ch] * chH * 0.4;
+      if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+  }
+
+  ctx.restore();
+}
+
+// ── Bars ──
+function updateBars(f) {
+  const p = f.all_probabilities;
+  CLASSES.forEach(c => {
+    const v = p[c] || 0;
+    document.getElementById('bf-' + c).style.width = (v * 100) + '%';
+    document.getElementById('bp-' + c).textContent = (v * 100).toFixed(0) + '%';
+  });
+}
+
+// ── Decision ──
+function updateDecision(f) {
+  const cmd = f.predicted_class;
+  const color = COLORS[cmd];
+  document.getElementById('cmdText').textContent = cmd.toUpperCase();
+  document.getElementById('cmdText').style.color = color;
+  document.getElementById('confPct').textContent = (f.confidence * 100).toFixed(1) + '%';
+
+  const dot = document.getElementById('gateDot');
+  const lbl = document.getElementById('gateLabel');
+  if (f.is_above_threshold) {
+    dot.className = 'gate-dot on';
+    lbl.textContent = 'EXECUTING';
+    lbl.style.color = '#22c55e';
+  } else {
+    dot.className = 'gate-dot off';
+    lbl.textContent = 'Below threshold';
+    lbl.style.color = '#ef4444';
+  }
+
+  const truth = TRUTH_MAP[f.true_label] || f.true_label;
+  document.getElementById('truthLabel').textContent = truth.toUpperCase();
+}
+</script>
+</body>
+</html>
